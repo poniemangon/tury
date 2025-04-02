@@ -8,8 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+
+
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header>
@@ -43,7 +47,7 @@
         </section>
     </header>
     <main>
-        <section class="banner-section">
+        <section  class="banner-section">
             <div class="container">
                 <div class="col text-col">  
                     <p class="headline">Conocé TURY en Argentina</p>
@@ -86,7 +90,7 @@
             </div>
             
         </section>
-        <section class="about-us-section">
+        <section id="about-us" class="about-us-section">
             <div class="container">
                 <div class="col">
                     <div class="texts">
@@ -97,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-us-section" id="contact-us">
+        <section id="contact" class="contact-us-section" id="contact-us">
             <div class="row d-flex">
                 
                 <div class="col car-col"></div>
@@ -126,12 +130,151 @@
                 </div>
             </div>
         </section>
-        <section class="product-slider-section">
-            
+        <section id="specs" class="product-carousel-section">
+                <div class="container text">
+                    <h5 class="subhead">ESPECIFICACIONES</h5>
+                </div>
+                <div class="wrapper">
+                    <div class="product-slider">
+                        <div class="item">
+                            <div class="container">
+                                <div class="title">
+                                    <span class="display-1">
+                                        FASTMAX
+                                    </span>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="col product-image">
+                                        <img src="./images/slider-product-fastmax.png" alt="">
+                                    </div>
+                                    <div class="text-col col">
+                                        <h5 class="subhead">
+                                            CHECK THE CHARGER COMPATIBILITY
+                                        </h5>
+                                        <p class="caption">
+                                            We have 1000+ charging points to satisfy any need we’ve been power efficent since we started around 60keh per day
+                                        </p>
+                                        <div class="grey-images d-flex">
+                                            <img src="./images/slide-grey-1.png" alt="">
+                                            <img src="./images/slide-grey-2.png" alt="">
+                                            <img src="./images/slide-grey-3.png" alt="">
+                                            <img src="./images/slide-grey-4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                        <div class="item">
+                            <div class="container">
+                                <div class="title">
+                                    <span class="display-1">
+                                        FASTMAX
+                                    </span>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="col product-image">
+                                        <img class="second-slide" src="./images/slider-product-charger.png" alt="">
+                                    </div>
+                                    <div class="text-col col">
+                                        <h5 class="subhead">
+                                            CHECK THE CHARGER COMPATIBILITY
+                                        </h5>
+                                        <p class="caption">
+                                            We have 1000+ charging points to satisfy any need we’ve been power efficent since we started around 60keh per day
+                                        </p>
+                                        <div class="grey-images d-flex">
+                                            <img src="./images/slide-grey-1.png" alt="">
+                                            <img src="./images/slide-grey-2.png" alt="">
+                                            <img src="./images/slide-grey-3.png" alt="">
+                                            <img src="./images/slide-grey-4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container">
+                                <div class="title">
+                                    <span class="display-1">
+                                        FASTMAX
+                                    </span>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="col product-image">
+                                        <img src="./images/slider-product-autolight.png" alt="">
+                                    </div>
+                                    <div class="text-col col">
+                                        <h5 class="subhead">
+                                            CHECK THE CHARGER COMPATIBILITY
+                                        </h5>
+                                        <p class="caption">
+                                            We have 1000+ charging points to satisfy any need we’ve been power efficent since we started around 60keh per day
+                                        </p>
+                                        <div class="grey-images d-flex">
+                                            <img src="./images/slide-grey-1.png" alt="">
+                                            <img src="./images/slide-grey-2.png" alt="">
+                                            <img src="./images/slide-grey-3.png" alt="">
+                                            <img src="./images/slide-grey-4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container progress-container">
+                    <div class="slide-progress">
+                        <img src="./images/vector-line-circle.png" alt="" class="vector-line-circle">
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+        </section>
+        <section class="banner-bottom-section">
+            <div class="container">
+                <h2>Una marca líder en innovación automotriz</h2>
+                <div class="row d-flex">
+                    <p class="caption">Con más de 25 años de trayectoria, Tury es una marca brasilera que desarrolla soluciones electrónicas para vehículos, priorizando la seguridad, la comodidad y la experiencia de manejo. Presente en más de 30 países, ahora llega a Argentina de la mano de ABC Accesorios.</p>
+                    <a href="" class="btn red">SITIO OFICIAL</a>
+                </div>
+            </div>
         </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./scripts.js"></script>
+    <footer class="footer">
+        <section class="footer-section">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="footer-left">
+                        <img src="./images/logo.png" alt="Logo Tury" class="footer-logo">
+                        <img src="./images/abc-logo.png" alt="">
+                        
+                    </div>
+                    <div class="footer-right d-flex">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a  href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <p class="caption">Tury 2025 Copyright © - Todos los derechos reservados</p>
+            </div>
+        </section>
+
+    </footer>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!-- Slick -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+        <!-- Tu script -->
+        <script src="./scripts.js"></script>
 </body>
 </html>

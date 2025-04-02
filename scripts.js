@@ -42,4 +42,56 @@ $(document).ready(function () {
     });
 });
 
-$('.product-carousel').slick();
+
+
+
+
+    $('.product-slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+    });
+    
+    $(document).ready(function() {
+        var $carousel = $('.product-slider');
+        var lineWidth = $('.slide-progress .line').width();
+    
+        function updateProgressBar(currentSlide) {
+            var carouselWidth = $('.slide-progress').width();
+            var totalSlides = $carousel.slick('getSlick').slideCount;
+            var pixelPerSlide = carouselWidth / (totalSlides - 1);
+    
+            var currentPixels = currentSlide * pixelPerSlide;
+    
+            if (currentSlide === 0) {
+                currentPixels = 0;
+            } else if (currentSlide === totalSlides - 1) {
+                currentPixels -= lineWidth;
+            } else {
+                currentPixels -= lineWidth / 2;
+            }
+    
+            currentPixels = Math.max(0, Math.min(currentPixels, carouselWidth - lineWidth));
+    
+            $('.slide-progress .line').css('left', currentPixels + 'px');
+        }
+    
+        $carousel.on('afterChange', function(event, slick, currentSlide) {
+            updateProgressBar(currentSlide);
+        });
+    
+        $carousel.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+            updateProgressBar(nextSlide);
+        });
+    
+        $(window).on('resize', function() {
+            updateProgressBar($carousel.slick('slickCurrentSlide'));
+        });
+    });
+    
+    
+    
+    
