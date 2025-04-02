@@ -94,4 +94,16 @@ $(document).ready(function () {
     
     
     
-    
+    function onScroll() {
+        document.querySelectorAll(".animate-on-scroll").forEach((element) => {
+            let rect = element.getBoundingClientRect();
+            let windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            if (rect.top <= windowHeight - 100) {
+                element.classList.add("visible", element.dataset.animation);
+            }
+        });
+    }
+
+    window.addEventListener("scroll", onScroll);
+    onScroll(); 
