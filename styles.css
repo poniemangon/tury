@@ -16,7 +16,7 @@ main {overflow: hidden;}
 
 h1 {font-size: 50px; line-height: 55px; font-family: "Inter", sans-serif; font-weight: 500;}
 
-.display-2 {font-size: 57px; line-height: 55px; font-family: "Inter", sans-serif; font-weight: 500; text-transform: uppercase; line-height: 73px;}
+.display-2 {font-size: 57px;  font-family: "Inter", sans-serif; font-weight: 500; text-transform: uppercase; line-height: 73px;}
 
 .display-1 {font-size: 132px; line-height: 78px; font-family: "Inter", sans-serif; font-weight: 500; text-transform: uppercase; line-height: 73px;}
 
@@ -37,7 +37,7 @@ a {text-decoration: none;  transition: 0.2s;}
 
     h2 {font-size: 36px;}
 
-    .display-2 {font-size: 50px;}
+    .display-2 {font-size: 50px; line-height: 60px}
 
     .subhead {font-size: 16px;}
 
