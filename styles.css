@@ -229,7 +229,7 @@ ul, li {list-style: none;}
 
 /* products slide section */
 
-.product-carousel-section {padding-top: 115px; position: relative;}
+.product-carousel-section {padding-top: 115px; position: relative; overflow: hidden}
 
 .product-carousel-section .item {padding: 40px 0;}
 
@@ -255,7 +255,7 @@ ul, li {list-style: none;}
 
 .product-slider .item {background: url('./images/slide-vector.png'); background-size: 65%; background-position: left; background-repeat: no-repeat;} 
 
-.product-slider .item::before {    mask-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, transparent);}
+.product-slider .item:before {    mask-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, transparent);}
 
 .product-slider .item .grey-images {gap: 10px; width: 100%; margin: 15px 0;}
 
