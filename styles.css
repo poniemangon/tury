@@ -411,6 +411,8 @@ ul, li {list-style: none;}
 }
 
 @media(max-width: 992px){
+    .slick-slide {height: unset;}
+
     .footer-section .row {flex-direction: column; align-items: center; margin-bottom: 40px; gap: 20px;}
 
     .footer-section .footer-left {margin: auto;}
